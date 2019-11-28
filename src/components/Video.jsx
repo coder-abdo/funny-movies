@@ -13,7 +13,7 @@ export const Video = ({ src, title, sharedBy, description }) => {
       </div>
       <div className={classes.content}>
         <h2 className={classes.videoTitle}>{title}</h2>
-        <h3 className={classes.videoShredby}> shared by: {sharedBy}</h3>
+        <h3 className={classes.videoSharedby}> shared by: {sharedBy}</h3>
         <p className={classes.description}>
           Discription: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

@@ -41,3 +41,15 @@
     padding: 1rem;
   }
 }
+@media (max-width: 25em) {
+  .description {
+    font-size: 3vw;
+  }
+  .videoTitle {
+    font-size: 4vw;
+  }
+  .videoSharedby {
+    margin-bottom: 2vh;
+    font-size: 3.5vw;
+  }
+}

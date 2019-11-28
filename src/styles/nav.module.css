@@ -13,11 +13,17 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 .user span {
   text-transform: capitalize;
-  margin-right: 2vw;
+  margin-right: 0.5vw;
+}
+.user img {
+  width: 2vw;
+  height: 2vw;
+  margin-right: 0.5vw;
+  border-radius: 50%;
 }
 .btn {
   padding: 1vw 2vw;
@@ -43,4 +49,26 @@
   margin-left: 1vw;
   font-size: 4vw;
   text-transform: capitalize;
+}
+@media (max-width: 25em) {
+  .nav {
+    flex-direction: column;
+    padding-bottom: 1vh;
+    align-items: flex-start;
+  }
+  .logoName {
+    font-size: 5vw;
+  }
+  .logo {
+    font-size: 5vw;
+    margin-bottom: 1vh;
+  }
+  .user {
+    justify-content: space-between;
+    font-size: 3vw;
+  }
+  .user img {
+    width: 5vw;
+    height: 5vw;
+  }
 }

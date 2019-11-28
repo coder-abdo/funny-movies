@@ -14,7 +14,11 @@ export const Home = () => {
   };
   return (
     <div>
-      <Navbar user={state.user.email} handleLogout={handleLogout} />
+      <Navbar
+        user={state.user.email}
+        handleLogout={handleLogout}
+        image={state.user.photoURL}
+      />
       <div className="container">
         <div className="videos">
           {state.movies.length > 0 ? (

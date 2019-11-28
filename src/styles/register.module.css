@@ -45,3 +45,22 @@
   text-transform: capitalize;
   padding-left: 2vw;
 }
+@media (max-width: 37.5em) {
+  .registerForm {
+    flex-direction: column;
+  }
+  .myInput {
+    max-width: 95vw;
+    width: 100%;
+    margin-bottom: 2vw;
+    font-size: 3vw;
+  }
+  .submitBtn {
+    max-width: 95%;
+    width: 100%;
+    font-size: 5vw;
+  }
+  .alreadyUser {
+    font-size: 4vw;
+  }
+}

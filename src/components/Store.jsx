@@ -2,6 +2,7 @@ import React, { createContext, useReducer } from "react";
 import uuid from "uuid/v4";
 export const SET_USER = "SET_USER";
 export const CLEAR_USER = "CLEAR_USER";
+export const SHARE_MOVIE = "SHARE_MOVIE";
 export const Data = createContext(null);
 const reducers = (state, { type, payload }) => {
   switch (type) {
@@ -14,6 +15,19 @@ const reducers = (state, { type, payload }) => {
       return {
         ...state,
         user: {}
+      };
+    case SHARE_MOVIE:
+      return {
+        ...state,
+        movies: [
+          {
+            id: uuid(),
+            src: payload.src,
+            title: payload.title,
+            sharedBy: payload.sharedBy
+          },
+          ...state.movies
+        ]
       };
     default:
       return state;

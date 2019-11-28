@@ -3,14 +3,14 @@ import "firebase/auth";
 import "firebase/database";
 import "firebase/storage";
 const firebaseConfig = {
-  apiKey: "AIzaSyDoz9MgEnszwmJW1GW9WWxMOairlOxvGrQ",
-  authDomain: "funny-movies-2020.firebaseapp.com",
-  databaseURL: "https://funny-movies-2020.firebaseio.com",
-  projectId: "funny-movies-2020",
-  storageBucket: "funny-movies-2020.appspot.com",
-  messagingSenderId: "49339191779",
-  appId: "1:49339191779:web:93725a8202df8e60f310d6",
-  measurementId: "G-0X1MTJ65EE"
+  apiKey: process.env.APIKEY,
+  authDomain: process.env.AUTHDOMAIN,
+  databaseURL: process.env.DATABASEURL,
+  projectId: process.env.PROJECTID,
+  storageBucket: process.env.STORAGEBUCKET,
+  messagingSenderId: process.env.MESSAGINSENDERID,
+  appId: process.env.APPID,
+  measurementId: process.env.MEASUREMENTID
 };
 // Initialize Firebase
 const fire = firebase.initializeApp(firebaseConfig);
