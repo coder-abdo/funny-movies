@@ -1,0 +1,42 @@
+.container {
+  max-width: 95vw;
+  width: 100%;
+  padding: 2rem 0;
+  margin: auto;
+}
+.video-container {
+  display: flex;
+}
+.video {
+  padding: 2rem 1rem 2rem 4rem;
+  width: 100%;
+  height: 100%;
+}
+.video-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.video-sharedby {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.description {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.video iframe {
+  width: 100%;
+  min-height: 35rem;
+  height: 100%;
+}
+.content {
+  padding: 2rem;
+}
+@media (max-width: 37.5em) {
+  .video-container {
+    flex-direction: column;
+  }
+  .video {
+    padding: 1rem;
+  }
+}

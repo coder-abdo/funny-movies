@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import fire from "../config/firebase";
 import md5 from "md5";
 export const Register = () => {
-  const [isMember, setIsMember] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -48,6 +47,7 @@ export const Register = () => {
   };
   return (
     <>
+      <h2>Register to funny movies app</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="email"
