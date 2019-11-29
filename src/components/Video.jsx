@@ -1,9 +1,9 @@
 import React from "react";
-import "../styles/movies.css";
+import classes from "../styles/movies.module.css";
 export const Video = ({ src, title, sharedBy, description }) => {
   return (
-    <div className="video-container">
-      <div className="video">
+    <div className={classes.videoContainer}>
+      <div className={classes.video}>
         <iframe
           src={src}
           frameBorder="0"
@@ -11,10 +11,10 @@ export const Video = ({ src, title, sharedBy, description }) => {
           allowFullScreen
         />
       </div>
-      <div className="content">
-        <h2 className="video-title">{title}</h2>
-        <h3 className="video-shredby"> shared by: {sharedBy}</h3>
-        <p className="description">
+      <div className={classes.content}>
+        <h2 className={classes.videoTitle}>{title}</h2>
+        <h3 className={classes.videoShredby}> shared by: {sharedBy}</h3>
+        <p className={classes.description}>
           Discription: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Arcu dictum varius duis at. Ultricies mi eget mauris pharetra et

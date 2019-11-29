@@ -1,39 +1,40 @@
 .container {
   max-width: 95vw;
   width: 100%;
-  padding: 2rem 0;
+  padding: 2vw 0;
   margin: auto;
 }
-.video-container {
+.videoContainer {
   display: flex;
 }
 .video {
-  padding: 2rem 1rem 2rem 4rem;
+  padding: 2vw 1vw 2vw 4vw;
   width: 100%;
   height: 100%;
 }
-.video-title {
-  font-size: 2rem;
-  margin-bottom: 2rem;
+.videoTitle {
+  font-size: 2vw;
+  margin-bottom: 2vw;
 }
-.video-sharedby {
-  font-size: 1.6rem;
-  margin-bottom: 2rem;
+.videoSharedby {
+  font-size: 1.6vw;
+  margin-bottom: 2vw;
 }
 .description {
-  font-size: 1.4rem;
+  font-size: 1.4vw;
   font-weight: 700;
 }
 .video iframe {
+  min-width: 50vw;
   width: 100%;
-  min-height: 35rem;
+  min-height: 50vh;
   height: 100%;
 }
 .content {
-  padding: 2rem;
+  padding: 2vw;
 }
 @media (max-width: 37.5em) {
-  .video-container {
+  .videoContainer {
     flex-direction: column;
   }
   .video {

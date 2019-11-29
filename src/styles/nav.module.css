@@ -1,4 +1,4 @@
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,41 +6,41 @@ nav {
   max-width: 90vw;
   width: 100%;
   margin: auto;
-  padding: 2rem 0 0.5rem;
+  padding: 2vw 0 0.5vw;
   border-bottom: 1px solid #333;
 }
 .user {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 2rem;
+  font-size: 2vw;
 }
 .user span {
   text-transform: capitalize;
-  margin-right: 2rem;
+  margin-right: 2vw;
 }
 .btn {
-  padding: 1rem 2rem;
+  padding: 1vw 2vw;
   color: #333;
-  box-shadow: 3px 3px 0 0 #333;
+  box-shadow: 0.3vw 0.3vw 0 0 #333;
   border: 1px solid #333;
   text-decoration: none;
   transition: box-shadow 0.3s ease-in-out;
 }
 .btn:hover {
-  box-shadow: 6px 6px 0 0 #333;
+  box-shadow: 0.6vw 0.6vw 0 0 #333;
 }
-.btn--share {
-  margin-right: 1rem;
+.btnShare {
+  margin-right: 1vw;
 }
 .logo {
   display: flex;
   align-items: center;
-  font-size: 3rem;
+  font-size: 3vw;
   color: #333;
 }
-.logo__name {
-  margin-left: 1rem;
-  font-size: 4rem;
+.logoName {
+  margin-left: 1vw;
+  font-size: 4vw;
   text-transform: capitalize;
 }

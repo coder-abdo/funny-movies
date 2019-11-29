@@ -1,6 +1,7 @@
 import React, { createContext, useReducer } from "react";
 import uuid from "uuid/v4";
 export const SET_USER = "SET_USER";
+export const CLEAR_USER = "CLEAR_USER";
 export const Data = createContext(null);
 const reducers = (state, { type, payload }) => {
   switch (type) {
@@ -9,7 +10,11 @@ const reducers = (state, { type, payload }) => {
         ...state,
         user: payload
       };
-
+    case CLEAR_USER:
+      return {
+        ...state,
+        user: {}
+      };
     default:
       return state;
   }

@@ -4,7 +4,7 @@ import { Share } from "./pages/Share";
 import { Register } from "./pages/Register";
 import { Login } from "./pages/Login";
 import fire from "./config/firebase";
-import { Data, SET_USER } from "./components/Store";
+import { Data, SET_USER, CLEAR_USER } from "./components/Store";
 import { Switch, Route, useHistory } from "react-router-dom";
 import "./styles/app.css";
 export const App = props => {
@@ -16,6 +16,9 @@ export const App = props => {
       if (user) {
         dispatch({ type: SET_USER, payload: user });
         history.push("/");
+      } else {
+        history.push("/login");
+        dispatch({ type: CLEAR_USER });
       }
     });
   }, []);

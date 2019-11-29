@@ -1,20 +1,24 @@
 import React from "react";
 import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import "../styles/nav.css";
-const Navbar = ({ user }) => {
+import classes from "../styles/nav.module.css";
+const Navbar = ({ user, handleLogout }) => {
   return (
-    <nav>
-      <div className="logo">
+    <nav className={classes.nav}>
+      <div className={classes.logo}>
         <FaHome />
-        <h2 className="logo__name">funny movies</h2>
+        <h2 className={classes.logoName}>funny movies</h2>
       </div>
-      <div className="user">
-        <span>hello, {user}</span>
-        <Link to="/share" className="btn btn--share">
+      <div className={classes.user}>
+        <span>welcome, {user}</span>
+        <Link to="/share" className={`${classes.btn} ${classes.btnShare}`}>
           Share a video
         </Link>
-        <Link to="/register" className="btn btn--register">
+        <Link
+          to="/register"
+          className={`${classes.btn} ${classes.btnShare}`}
+          onClick={handleLogout}
+        >
           logout
         </Link>
       </div>

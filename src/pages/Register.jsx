@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import fire from "../config/firebase";
 import md5 from "md5";
+import classes from "../styles/register.module.css";
 export const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -47,12 +48,13 @@ export const Register = () => {
   };
   return (
     <>
-      <h2>Register to funny movies app</h2>
-      <form onSubmit={handleSubmit}>
+      <h2 className={classes.formTitle}>Register to funny movies app</h2>
+      <form onSubmit={handleSubmit} className={classes.registerForm}>
         <input
           type="email"
           name="email"
           id="email"
+          className={classes.myInput}
           onChange={e => setEmail(e.target.value)}
           value={email}
         />
@@ -61,14 +63,17 @@ export const Register = () => {
           name="password"
           id="password"
           value={password}
+          className={classes.myInput}
           onChange={e => setPassword(e.target.value)}
         />
-        <button type="submit">Submit</button>
+        <button type="submit" className={classes.submitBtn}>
+          Submit
+        </button>
       </form>
       {error.length > 0 && <h3>{error}</h3>}
-      <h3>
+      <h3 className={classes.alreadyUser}>
         already user?{" "}
-        <Link to="/login" className="btn btn--login">
+        <Link to="/login" className={classes.submitBtn}>
           login
         </Link>
       </h3>
